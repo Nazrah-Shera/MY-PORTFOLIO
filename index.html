@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling.Including a viewport meta tag for proper responsive behaviors.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+  #slider_text {
+
+font-size: 64px;
+font-weight: 100;
+color: white;
+text-shadow: 0 1px 2px #000;
+position:fixed;
+bottom: 20px;
+left: 80px;
+}
+
+/*-------------------------------------------------------------------*/
+
+
+@media (min-width: 1201px) and (max-width: 5000px) {
+  .jumbotron h1 {
+    
+    margin-top: -27px;
+    margin-left: 2em;  
+  }
+  .jumbotron p {
+    margin-top: -11px;
+    margin-left: 4em;
+    font-size: 20px;
+  }
+}
+ 
+@media (min-width: 800px) and (max-width: 1200px) {
+  .jumbotron h1 {
+    font-size: 30px;
+    margin-top: -20px;
+    margin-left: 2em;  
+  }
+  .jumbotron p {
+    margin-top: -8px;
+    margin-left: 4em;
+    font-size: 15px;
+  }
+}
+ 
+@media (min-width: 600px) and (max-width: 799px) {
+  .jumbotron h1 {
+    font-size: 25px;
+    margin-top: -20px;
+    margin-left: 0em;   
+  }
+  .jumbotron p {
+    margin-top: -30px;
+    margin-left: 7em;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+  .jumbotron h1 {
+    font-size: 20px;
+    margin-top: -20px;
+    margin-left: 5px;    
+  }
+  .jumbotron p {
+    margin-top: -25px;
+    margin-left: 8em;
+    font-size: 10px;
+    
+  }
+}
+
+@media (min-width: 400px) and (max-width: 499px) {
+  .jumbotron h1 {
+    font-size: 18px;
+    margin-top: -20px;
+    margin-left: 5px;    
+  }
+  .jumbotron p {
+    margin-top: -25px;
+    margin-left: 8em;
+    font-size: 9px;
+    
+  }
+}
+@media (min-width: 200px) and (max-width: 399px) {
+  .jumbotron h1 {
+    font-size: 15px;
+    margin-top: -20px;
+    margin-left: 5px;    
+  }
+  .jumbotron p {
+    margin-top: -25px;
+    margin-left: 8em;
+    font-size: 7px;
+    
+  }
+}
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+</style>
+
+<body>
+    <!--NAVBAR K LYE CODE-->
+    <div>  
+
+
+
+
+        <!--NAVIGATION BAR-->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">Nazrah Shera</a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+              
+                <!-- Dropdown -->
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  BRAND
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Link 1</a>
+                  <a class="dropdown-item" href="#">Link 2</a>
+                  <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+              </li>
+              <!--------DROPDOWN END------->
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              MODELS
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+          </li>
+          <!--------DROPDOWN END------->
+        
+        
+                <li class="nav-item">
+                  <a class="nav-link" href="#">NEWS</a>
+                </li>
+        
+        
+               <!-- Dropdown -->
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  OWNERSHIP
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Link 1</a>
+                  <a class="dropdown-item" href="#">Link 2</a>
+                  <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+              </li>
+              <!--------DROPDOWN END------->
+        
+        
+               <!-- Dropdown -->
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  TOOLS
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Link 1</a>
+                  <a class="dropdown-item" href="#">Link 2</a>
+                  <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+              </li>
+              <!--------DROPDOWN END------->
+        
+              <li>
+                <input type="button" class="btn btn-light col-sm-12"  value="DEALER LOCATOR" style="height: 5em;background-color: #F2F1F0;border-radius: 0em;">
+                
+            </li>
+            <li>
+                <input type="button" class="btn btn-light col-sm-12"  value="GET IN TOUCH" style="background-color: #0C2340;color: ivory;height: 5em;border-radius: 0em;border:0em">
+                
+            </li>    
+            <li>
+                <button type="submit" class="btn btn-light" style="width: 6em;height: 5em; background-color: white;border-radius: 0em;"><i class="fa fa-search" ></i></button>
+            </li>
+           
+            </ul>
+            </div>
+          </nav>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          </div>
+    
+    <!--NAVBAR K LYE CODE END-->
+
+        <!--SLIDER K LYE CODE START-->
+        <div>  
+
+
+            <!--------------------SLIDER-------------------------------------->
+            <div style="display:block;width: 100%; height: auto;">
+            
+              <div id="demo" class="carousel slide " data-ride="carousel" >
+            
+                  <!-- Indicators -->
+                  <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                    <li data-target="#demo" data-slide-to="4"></li>
+                    <li data-target="#demo" data-slide-to="5"></li>
+                    
+                  
+                  </ul>
+                  
+                  <!-- The slideshow -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block img-fluid" src="G:\HTML_CSS NAZ PRACTICE\MY PORTFOLIO\images\race.jpg" alt="SLIDER 1" width="100%" height="580">
+                    <div class="carousel-caption left-caption text-left" id="slider_text">
+                      <h3  >NAZRAH SHERA</h3>
+                      <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit amet adipisci 
+                        laborum fugiat aspernatur cum molestiae, ullam ea ipsum iste culpa doloribus nam quam quasi, sint eveniet, 
+                        unde quod repellendus!</p>
+                    </div>
+                    </div>
+                  
+                    <div class="carousel-item">
+                      <img  class="d-block img-fluid"src="G:\HTML_CSS NAZ PRACTICE\MY PORTFOLIO\images\black.jpg" alt="SLIDER 2" width="100%" height="580">
+                    </div>
+                    <div class="carousel-item">
+                      <img  class="d-block img-fluid"src="G:\HTML_CSS NAZ PRACTICE\MY PORTFOLIO\images\half.jpg" alt="SLIDER 3" width="100%" height="580">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid"src="G:\HTML_CSS NAZ PRACTICE\MY PORTFOLIO\images\silvery.jpg" alt="SLIDER 4" width="100%" height="580">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid"src="G:\HTML_CSS NAZ PRACTICE\MY PORTFOLIO\images\blue.jpg" alt="SLIDER 5" width="100%" height="580">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid"src="G:\HTML_CSS NAZ PRACTICE\MY PORTFOLIO\images\red.jpg" alt="SLIDER 6" width="100%" height="580">
+                    </div>
+                  </div>
+                  
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+            <!------------------SLIDER END-------------------------------->
+            
+            
+              </div>
+            <!--SLIDER K LYE CODE END-->
+
+            <!--JUMBOTRON K LYE CODE START-->
+            <div>  
+
+  
+                <div class="jumbotron jumbotron-fluid" style="height:3em;font-weight: lighter;background-color: #F2F1F0;color:rgba(26, 25, 25, 0.979);text-align: left;">
+                <div class="container">
+                  <div class="row">
+            <h1 style="font-weight: lighter;">Models</h1>
+                  <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo delectus repellat, quos maxime.</p>
+                
+              </div>
+                </div>
+              </div>
+                 
+              
+            
+              </div>
+            <!--JUMBOTRON K LYE CODE END-->
+
+
+             <!--CARDS K LYE CODE START-->
+             <div>  
+
+                <div class="container">
+                  <div class="row">
+                    <!--FIRST CARD-->
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12" style="margin:auto">
+                  <div class="card" style="border-color: white;border-right-color: rgba(2, 2, 2, 0.062);border-width: 0.5px;">
+                    <div class="card-body">
+                      <h4 class="card-title" style="text-align: center;margin-bottom: 30px; font-weight:inherit;">Ghibli</h4>
+                      <p class="card-text" style="text-align: center;font-weight: lighter;font-size: 15px;">YOU'RE NOT LIKE EVERYONE ELSE</p>
+                      <p style="text-align: center;font-size: 13px;font-weight: lighter;">A masterful combination of<br>style, power, sporty handling<br>and comfort.</p>
+                           </div>
+                    <img class="card-img-bottom" src="G:\HTML_CSS NAZ PRACTICE\MY PORTFOLIO\images\png_6.png" alt="Card image" style="margin-top: -33px;margin-bottom: 33px;">
+                 
+                  <div style="text-align: center;">
+                    <a href="#" class="btn btn-light " style="border-width: 0.5px;border-color:black;">DISCOVER MORE</a>
+                    <br>
+                    <a href="#" class="btn btn-light" style="background-color: #0C2340;color: blanchedalmond;border-width: 0.5px;border-color:black;margin-top: 10px;">BUILD & PRICE</a>
+                  </div>
+                  </div>
+                </div>
+                <!--FIRST CARD END-->
+              
+              <!--SECOND CARD-->
+              <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12" style="margin:auto">
+                <div class="card" style="border-color: white;border-right-color: rgba(2, 2, 2, 0.062);border-width: 0.5px;">
+                  <div class="card-body">
+                    <h4 class="card-title" style="text-align: center;margin-bottom: 30px; font-weight:inherit;">Ghibli</h4>
+                    <p class="card-text" style="text-align: center;font-weight: lighter;font-size: 15px;">YOU'RE NOT LIKE EVERYONE ELSE</p>
+                    <p style="text-align: center;font-size: 13px;font-weight: lighter;">A masterful combination of<br>style, power, sporty handling<br>and comfort.</p>
+                         </div>
+                  <img class="card-img-bottom" src="G:\HTML_CSS NAZ PRACTICE\MY PORTFOLIO\images\png_6.png" alt="Card image" style="margin-top: -33px;margin-bottom: 33px;">
+               
+                <div style="text-align: center;">
+                  <a href="#" class="btn btn-light" style="border-width: 0.5px;border-color:black;">DISCOVER MORE</a>
+                  <br>
+                  <a href="#" class="btn btn-light" style="background-color: #0C2340;color: blanchedalmond;border-width: 0.5px;border-color:black;margin-top: 10px;">BUILD & PRICE</a>
+                </div>
+                </div>
+              </div>
+              <!--SECOND CARD START-->
+              
+              <!--THIRD CARD-->
+              <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12" style="margin:auto">
+                <div class="card" style="border-color: white;border-right-color: rgba(2, 2, 2, 0.062);border-width: 0.5px;">
+                  <div class="card-body">
+                    <h4 class="card-title" style="text-align: center;margin-bottom: 30px; font-weight:inherit;">Ghibli</h4>
+                    <p class="card-text" style="text-align: center;font-weight: lighter;font-size: 15px;">YOU'RE NOT LIKE EVERYONE ELSE</p>
+                    <p style="text-align: center;font-size: 13px;font-weight: lighter;">A masterful combination of<br>style, power, sporty handling<br>and comfort.</p>
+                         </div>
+                  <img class="card-img-bottom" src="G:\HTML_CSS NAZ PRACTICE\MY PORTFOLIO\images\png_6.png" alt="Card image" style="margin-top: -33px;margin-bottom: 33px;">
+               
+                <div style="text-align: center;">
+                  <a href="#" class="btn btn-light" style="border-width: 0.5px;border-color:black;">DISCOVER MORE</a>
+                  <br>
+                  <a href="#" class="btn btn-light" style="background-color: #0C2340;color: blanchedalmond;border-width: 0.5px;border-color:black;margin-top: 10px;">BUILD & PRICE</a>
+                </div>
+                </div>
+              </div>
+              <!--THIRD CARD START-->
+              
+              <!--FORTH CARD-->
+              <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12" style="margin:auto">
+                <div class="card" style="border-color: white;border-right-color: rgba(2, 2, 2, 0.062);border-width: 0.5px;">
+                  <div class="card-body">
+                    <h4 class="card-title" style="text-align: center;margin-bottom: 30px; font-weight:inherit;">Ghibli</h4>
+                    <p class="card-text" style="text-align: center;font-weight: lighter;font-size: 15px;">YOU'RE NOT LIKE EVERYONE ELSE</p>
+                    <p style="text-align: center;font-size: 13px;font-weight: lighter;">A masterful combination of<br>style, power, sporty handling<br>and comfort.</p>
+                         </div>
+                  <img class="card-img-bottom" src="G:\HTML_CSS NAZ PRACTICE\MY PORTFOLIO\images\png_6.png" alt="Card image" style="margin-top: -33px;margin-bottom: 33px;">
+               
+                <div style="text-align: center;">
+                  <a href="#" class="btn btn-light" style="border-width: 0.5px;border-color:black;">DISCOVER MORE</a>
+                  <br>
+                  <a href="#" class="btn btn-light" style="background-color: #0C2340;color: blanchedalmond;border-width: 0.5px;border-color:black;margin-top: 10px;">BUILD & PRICE</a>
+                </div>
+                </div>
+              </div>
+              <!--FORTH CARD START-->
+              
+              <!--FIFTH CARD-->
+              <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12" style="margin:auto">
+                <div class="card" style="border-color: white;border-right-color: rgba(2, 2, 2, 0.062);border-width: 0.5px;">
+                  <div class="card-body">
+                    <h4 class="card-title" style="text-align: center;margin-bottom: 30px; font-weight:inherit;">Ghibli</h4>
+                    <p class="card-text" style="text-align: center;font-weight: lighter;font-size: 15px;">YOU'RE NOT LIKE EVERYONE ELSE</p>
+                    <p style="text-align: center;font-size: 13px;font-weight: lighter;">A masterful combination of<br>style, power, sporty handling<br>and comfort.</p>
+                         </div>
+                  <img class="card-img-bottom" src="G:\HTML_CSS NAZ PRACTICE\MY PORTFOLIO\images\png_6.png" alt="Card image" style="margin-top: -33px;margin-bottom: 33px;">
+               
+                <div style="text-align: center;">
+                  <a href="#" class="btn btn-light" style="border-width: 0.5px;border-color:black;">DISCOVER MORE</a>
+                  <br>
+                  <a href="#" class="btn btn-light" style="background-color: #0C2340;color: blanchedalmond;border-width: 0.5px;border-color:black;margin-top: 10px;">BUILD & PRICE</a>
+                </div>
+                </div>
+              </div>
+              <!--FIFTH CARD START-->
+              
+              
+              </div>
+              </div>
+                
+              
+                </div>
+            <!--CARDS K LYE CODE END-->
+
+
+             <!--GALLERY K LYE CODE START-->
+             <div class="container-fluid">
+                <div class="row">
+                <div class="col-lg-12 my-3">
+                    <h1 style="font-weight: lighter;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">The World Of Maserati</h1>
+                </div>
+                </div>
+                
+                
+                
+                <!-- Grid row -->
+                <div class="row">
+                
+                  <!-- Grid column -->
+                  <div class="col-lg-4 col-md-12 mb-4">
+                
+                    <!--Modal: Name-->
+                    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg" role="document">
+                
+                        <!--Content-->
+                        <div class="modal-content">
+                
+                          <!--Body-->
+                          <div class="modal-body mb-0 p-0">
+                
+                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A3PDXmYoF5U"
+                                allowfullscreen></iframe>
+                            </div>
+                
+                          </div>
+                
+                          <!--Footer-->
+                          <div class="modal-footer justify-content-center">
+                            <span class="mr-4">Spread the word!</span>
+                            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+                            <!--Twitter-->
+                            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+                            <!--Google +-->
+                            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+                            <!--Linkedin-->
+                            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+                
+                            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                
+                          </div>
+                
+                        </div>
+                        <!--/.Content-->
+                
+                      </div>
+                    </div>
+                    <!--Modal: Name-->
+                
+                    <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt="video"
+                        data-toggle="modal" data-target="#modal1"></a>
+                
+                  </div>
+                  <!-- Grid column -->
+                
+                  <!-- Grid column -->
+                  <div class="col-lg-4 col-md-6 mb-4">
+                
+                    <!--Modal: Name-->
+                    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg" role="document">
+                
+                        <!--Content-->
+                        <div class="modal-content">
+                
+                          <!--Body-->
+                          <div class="modal-body mb-0 p-0">
+                
+                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTcNtgA6gHs"
+                                allowfullscreen></iframe>
+                            </div>
+                
+                          </div>
+                
+                          <!--Footer-->
+                          <div class="modal-footer justify-content-center">
+                            <span class="mr-4">Spread the word!</span>
+                            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+                            <!--Twitter-->
+                            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+                            <!--Google +-->
+                            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+                            <!--Linkedin-->
+                            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+                
+                            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                
+                          </div>
+                
+                        </div>
+                        <!--/.Content-->
+                
+                      </div>
+                    </div>
+                    <!--Modal: Name-->
+                
+                    <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-2.jpg" alt="video"
+                        data-toggle="modal" data-target="#modal6"></a>
+                
+                  </div>
+                  <!-- Grid column -->
+                
+                  <!-- Grid column -->
+                  <div class="col-lg-4 col-md-6 mb-4">
+                
+                    <!--Modal: Name-->
+                    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg" role="document">
+                
+                        <!--Content-->
+                        <div class="modal-content">
+                
+                          <!--Body-->
+                          <div class="modal-body mb-0 p-0">
+                
+                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                                allowfullscreen></iframe>
+                            </div>
+                
+                          </div>
+                
+                          <!--Footer-->
+                          <div class="modal-footer justify-content-center">
+                            <span class="mr-4">Spread the word!</span>
+                            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+                            <!--Twitter-->
+                            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+                            <!--Google +-->
+                            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+                            <!--Linkedin-->
+                            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+                
+                            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                
+                          </div>
+                
+                        </div>
+                        <!--/.Content-->
+                
+                      </div>
+                    </div>
+                    <!--Modal: Name-->
+                
+                    <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-3.jpg" alt="video"
+                        data-toggle="modal" data-target="#modal4"></a>
+                
+                  </div>
+                  <!-- Grid column -->
+                
+                </div>
+                <!-- Grid row -->
+                
+                <!-- Grid row -->
+                <div class="row">
+                
+                  <!-- Grid column -->
+                  <div class="col-lg-4 col-md-12 mb-4">
+                
+                    <!--Modal: Name-->
+                    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg" role="document">
+                
+                        <!--Content-->
+                        <div class="modal-content">
+                
+                          <!--Body-->
+                          <div class="modal-body mb-0 p-0">
+                
+                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GUEZCxBcM78"
+                                allowfullscreen></iframe>
+                            </div>
+                
+                          </div>
+                
+                          <!--Footer-->
+                          <div class="modal-footer justify-content-center">
+                            <span class="mr-4">Spread the word!</span>
+                            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+                            <!--Twitter-->
+                            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+                            <!--Google +-->
+                            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+                            <!--Linkedin-->
+                            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+                
+                            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                
+                          </div>
+                
+                        </div>
+                        <!--/.Content-->
+                
+                      </div>
+                    </div>
+                    <!--Modal: Name-->
+                
+                    <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-4.jpg" alt="video"
+                        data-toggle="modal" data-target="#modal2"></a>
+                
+                  </div>
+                  <!-- Grid column -->
+                
+                  <!-- Grid column -->
+                  <div class="col-lg-4 col-md-6 mb-4">
+                
+                    <!--Modal: Name-->
+                    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg" role="document">
+                
+                        <!--Content-->
+                        <div class="modal-content">
+                
+                          <!--Body-->
+                          <div class="modal-body mb-0 p-0">
+                
+                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PjGkVCAo8Fw"
+                                allowfullscreen></iframe>
+                            </div>
+                
+                          </div>
+                
+                          <!--Footer-->
+                          <div class="modal-footer justify-content-center">
+                            <span class="mr-4">Spread the word!</span>
+                            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+                            <!--Twitter-->
+                            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+                            <!--Google +-->
+                            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+                            <!--Linkedin-->
+                            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+                
+                            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                
+                          </div>
+                
+                        </div>
+                        <!--/.Content-->
+                
+                      </div>
+                    </div>
+                    <!--Modal: Name-->
+                
+                    <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-5.jpg" alt="video"
+                        data-toggle="modal" data-target="#modal5"></a>
+                
+                  </div>
+                  <!-- Grid column -->
+                
+                  <!-- Grid column -->
+                  <div class="col-lg-4 col-md-6 mb-4">
+                
+                    <!--Modal: Name-->
+                    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg" role="document">
+                
+                        <!--Content-->
+                        <div class="modal-content">
+                
+                          <!--Body-->
+                          <div class="modal-body mb-0 p-0">
+                
+                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gsNY7TV4r1M"
+                                allowfullscreen></iframe>
+                            </div>
+                
+                          </div>
+                
+                          <!--Footer-->
+                          <div class="modal-footer d-block d-md-flex justify-content-center">
+                            <span class="mr-4">Spread the word!</span>
+                            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+                            <!--Twitter-->
+                            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+                            <!--Google +-->
+                            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+                            <!--Linkedin-->
+                            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+                
+                            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                
+                          </div>
+                
+                        </div>
+                        <!--/.Content-->
+                
+                      </div>
+                    </div>
+                    <!--Modal: Name-->
+                
+                    <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-6.jpg" alt="video"
+                        data-toggle="modal" data-target="#modal3"></a>
+                
+                  </div>
+                  <!-- Grid column -->
+                
+                
+                
+                
+                </div>
+                <!-- Grid row -->
+                </div>
+            <!--GALLERY K LYE CODE END-->
+
+             <!--JUMBOTRON TWO K LYE CODE START-->
+             
+<!--A jumbotron indicates a big box for calling extra attention to some special content or information.-->
+<div>   
+    <div class="jumbotron" style="background-color: #F2F1F0;color: rgba(14, 13, 13, 0.767);text-decoration-style: solid;text-align: center;border-width: thin;border-color: black;">
+        <h1 id="name">Get in touch with Maserati</h1>
+            <p id="dept"><i>Request a test drive or a quote, and get in touch with your nearest dealer</i></p>
+            
+              <input type="button" class="btn btn-light col-sm-2"  value="GET IN TOUCH" style="background-color: #0C2340;color: ivory;height: 3em;border-radius: 0.2em;border:0em">
+              
+          </div>
+        
+    </div>
+  
+            <!--JUMBOTRON TWO K LYE CODE END-->
+
+                         <!--FOOTER K LYE CODE START-->
+                         
+<div class="container-fluid" style="background-color: rgb(49, 44, 44); color: white;">
+    <div class="row">
+    <div class="col-lg-4 mt-5 mb-4">
+        <ul style="list-style-type: none;">
+            <li><h6>Models</h6></li>
+            <li style="font-weight: lighter; letter-spacing: 1px;">Ghibli</li>
+            <li style="font-weight: lighter; letter-spacing: 1px;">Levante</li>
+            <li style="font-weight: lighter; letter-spacing: 1px;">Quattroporte</li>
+            <li style="font-weight: lighter; letter-spacing: 1px;">GranTurismo</li>
+            <li style="font-weight: lighter; letter-spacing: 1px;">GranCabrio</li>
+        </ul>
+    </div>
+    <div class="col-lg-4 mt-5 mb-4">
+        <ul style="list-style-type: none;">
+            <li style="font-weight: lighter; letter-spacing: 1px;" class="mt-4">Services and Aftersales</li>
+            <li style="font-weight: lighter; letter-spacing: 1px;">Dealer Locator</li>
+            <li style="font-weight: lighter; letter-spacing: 1px;">Build and Price</li>
+        </ul>
+    </div>
+    
+    <div class="col-lg-4 mt-5 mb-4">
+        <ul style="list-style-type: none;">
+        <li style="font-weight: lighter; letter-spacing: 1px;" class="mt-4">Press Releases (Media)</li>
+    <li style="font-weight: lighter; letter-spacing: 1px;">Contact Us</li>
+    <li style="font-weight: lighter; letter-spacing: 1px;">Newsletter</li>
+    <li style="font-weight: lighter; letter-spacing: 1px;">Bluetooth Compatibility</li>
+    </ul>
+    </div>
+    
+    </div>
+    
+    <div class="container mx-5">
+        <svg height="1" width="1170" style="margin-left: -20px;"> 
+            <line x1="0" y1="0" x2="1170" y2="0" style="stroke:rgba(241, 234, 234, 0.425);stroke-width:2" /></svg>    
+    </div>
+    
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-4 my-5 ">
+        <i class="fa fa-globe" aria-hidden="true"><span class="mx-4">International Website</span>
+           <span> <svg height="18" width="1"> <line x1="0" y1="0" x2="0" y2="100" style="stroke:rgba(241, 234, 234, 0.425);stroke-width:2" /></svg> </span>
+        <span><a style="text-decoration: underline;" class="mx-4">Change</a></span>
+        </i>
+    </div>
+    
+    <div class="col-lg-4"></div>
+    
+    <div class="col-lg-4 my-3 ">
+        <h6 style="font-size: 15px;">Stay up to date</h6>
+        <button type="button" class="btn btn-outline-light text-light my-3"
+         style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         letter-spacing: 1px;">SUBSCRIBE TO OUR NEWSLETTER</button>
+    </div>
+    </div>
+    
+    
+    <div class="row">
+        <div class="col-lg-12" style="text-align: center;letter-spacing: 3px;">
+            <i class="fa fa-facebook-official" aria-hidden="true" style="font-size: 34px;"></i>
+            <i class="fa fa-twitter-square" aria-hidden="true" style="font-size: 34px;"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 34px;"></i>
+            <i class="fa fa-instagram" aria-hidden="true" style="font-size: 34px;"></i>
+            <i class="fa fa-pinterest-square" aria-hidden="true" style="font-size: 34px;"></i>
+            <i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 34px;"></i>
+    
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    </div>
+    
+            <!--FOOTER K LYE CODE END-->
+
+                         <!--DASH K LYE CODE START-->
+            <!--DASH K LYE CODE END-->
+</body>
+</html>
